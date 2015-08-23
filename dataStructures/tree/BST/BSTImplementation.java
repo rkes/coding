@@ -87,11 +87,43 @@ class BST{
 		else
 			return findMin(root.left);
 	}
+	public boolean sayItsBST(BST tree,int min,int max){
+		if(tree==null)
+			return true;
+		else{
+			if(tree.data<min || tree.data>max){
+				return false;
+			}
+			else{                                                 
+				 return (
+						 sayItsBST(tree.left, min, tree.data-1)&&
+						 sayItsBST(tree.right,tree.data+1,max)
+						 );
+			}
+		}
+	}
+			
+	
+	public void showPathfromRootToLeaf(BST root,int []ar,int i){
+		if(root==null)
+			return;
+			ar[i]=root.data;
+			if(root.left==null&&root.right==null){
+				for(int k=0;k<=i;k++)
+					System.out.printf("%d  ",ar[k]);
+					i=0;
+				System.out.println();
+				}
+			else{
+				showPathfromRootToLeaf(root.left, ar, i+1);
+				showPathfromRootToLeaf(root.right, ar, i+1);
+			}
+		
+	}
 	public boolean addNode(int data){
 		boolean res=false;
 		System.out.println(" -  "+this.bst.left);
 		System.out.println(" +  "+this.bst.right);
-		
 		BST node=new BST(data);
 		BST temp=this.bst;
 		BST parent=null;
@@ -115,10 +147,8 @@ class BST{
 			parent.right=node;
 		return res;
 	}
-public void delete(){
-	
+ 
 }
- }
 
 public class BSTImplementation{
 	public static void main(String []args){
@@ -138,15 +168,23 @@ public class BSTImplementation{
 		for(int i=0;i<10;i++){
 			bstImple.addNode(i+2);
 		}*/
+		
 		///bstImple.deleteNode(data)
 		bstImple.inOrderTravers(bstImple.bst);
 		System.out.println();
 		bstImple.preOrderTravers(bstImple.bst);
 		System.out.println();
-		bstImple.postOrderTravers(bstImple.bst);
+		/*bstImple.postOrderTravers(bstImple.bst);
 		bstImple.deleteNode(bstImple.bst,22);
 		bstImple.deleteNode(bstImple.bst,200);
 		System.out.println("--------------------------------------");
 		bstImple.inOrderTravers(bstImple.bst);
+	*/
+		/*BST bst=new BST(1000);
+		BST temp=bstImple.findMin(bstImple.bst);
+		temp.left=bst;
+		*/
+		bstImple.showPathfromRootToLeaf(bstImple.bst,new int[20],0);
+		System.out.println(bstImple.sayItsBST(bstImple.bst,Integer.MIN_VALUE,Integer.MAX_VALUE));
 	}
 }
