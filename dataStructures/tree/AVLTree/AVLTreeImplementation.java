@@ -141,7 +141,7 @@ class AVLImpl{
 						
 					}
 				}
-	/*	tree.height=Math.max(height(tree.left), height(tree.right));
+		tree.height=Math.max(height(tree.left), height(tree.right));
 		int balance=balanceFactor(tree);
 		if(balance>1 && data<tree.left.data){
 			rightRotate(tree);
@@ -156,7 +156,7 @@ class AVLImpl{
 			tree.right=rightRotate(tree.right);
 			return leftRotate(tree);
 		}
-	*/	return tree;
+		return tree;
 		}
 	public AVLNode insert(int data,AVLNode tree){
 		if(tree==null){
