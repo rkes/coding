@@ -107,9 +107,7 @@ class BST{
 			}
 		}
 	}
-<<<<<<< HEAD
-			
-=======
+
 	
 	public BST LCA_GeneralTree(BST root,int left,int right){
 		if(root==null)
@@ -130,7 +128,7 @@ class BST{
 			}
 		}
 	}
->>>>>>> origin/master
+
 	
 	public void showPathfromRootToLeaf(BST root,int []ar,int i){
 		if(root==null)
@@ -150,11 +148,10 @@ class BST{
 	}
 	public boolean addNode(int data){
 		boolean res=false;
-<<<<<<< HEAD
+
 		System.out.println(" -  "+this.bst.left);
 		System.out.println(" +  "+this.bst.right);
-=======
->>>>>>> origin/master
+
 		BST node=new BST(data);
 		BST temp=this.bst;
 		BST parent=null;
@@ -178,9 +175,7 @@ class BST{
 			parent.right=node;
 		return res;
 	}
-<<<<<<< HEAD
- 
-=======
+
 	
 	public void showAllLeaves(BST tree){
 		if(tree==null)
@@ -288,7 +283,7 @@ class BST{
 				return max;
 		}
 	}
->>>>>>> origin/master
+
 }
 
 public class BSTImplementation{
@@ -315,9 +310,9 @@ public class BSTImplementation{
 		System.out.println();
 		bstImple.preOrderTravers(bstImple.bst);
 		System.out.println();
-<<<<<<< HEAD
+
 		/*bstImple.postOrderTravers(bstImple.bst);
-=======
+
 		/*bstImple.pos2t03OrderTravers(bstImple.bst);
 >>>>>>> origin/master
 		bstImple.deleteNode(bstImple.bst,22);
@@ -329,10 +324,10 @@ public class BSTImplementation{
 		BST temp=bstImple.findMin(bstImple.bst);
 		temp.left=bst;
 		*/
-<<<<<<< HEAD
+
 		bstImple.showPathfromRootToLeaf(bstImple.bst,new int[20],0);
 		System.out.println(bstImple.sayItsBST(bstImple.bst,Integer.MIN_VALUE,Integer.MAX_VALUE));
-=======
+
 		String str=new String("Love");
 		System.out.println(str.charAt(4));
 		System.out.println(" All Possible Path from Root  ");
@@ -357,6 +352,6 @@ public class BSTImplementation{
 		System.out.println(bstImple.getMax(bstImple.bst));
 		//System.out.println(bstImple.findLCA(bstImple.bst, bstImple.findNode(bstImple.bst, 14),bstImple.findNode(bstImple.bst, 27)).data);
 		
->>>>>>> origin/master
+
 	}
 }
