@@ -5,6 +5,7 @@
 5.      Design a lift system in a high rise building with certain lifts or different floors.
 6.      Design a LRU cache ( Q is available on Interviewbit ).
 7.      What happens in the backend design when you put Amazon.com in the URL.
-8.      What are the various design patters what parameters are to be considered when designing a system ( eg. Fault tolerance, Scalability, Latency )
+8.      What are the various design patters what parameters are to be considered when designing a system 
+        ( eg. Fault tolerance, Scalability, Latency )
 9. 		  Design Cricinfo 
 10.     Design Queue.
