@@ -1,5 +1,5 @@
 public class MatrixRotation {
-
+	/* Only for Square Matrix*/
 	public static void main(String[] args) {
 		int n = 5;
 		int[][] mat = 
