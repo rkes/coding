@@ -1,3 +1,5 @@
+HEAP SORT
+------------------------------------------------------------------------------------------------------------------------
 In Heap Sort we first make max heap in which root will be larger than its childs
 then we swap the last element with the first i.e. first element was the maximum in heap so it will be moved to last to have its poistion in sorted array
 Then we heapfiy again
