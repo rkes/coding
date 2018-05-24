@@ -1,0 +1,7 @@
+In Heap Sort we first make max heap in which root will be larger than its childs
+then we swap the last element with the first i.e. first element was the maximum in heap so it will be moved to last to have its poistion in sorted array
+Then we heapfiy again
+
+In merging k sorted Array , create a heap of k HeapElements ,  HeapElement will have details of element data , its array index and in the index in that array
+heapify that in min heap , so that we get root as minimum , then replace next element from the HeapElement replace it with root i.e. first element
+and then hepify again.
